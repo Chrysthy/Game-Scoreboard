@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Scoreboard</h1>
+
+    <input type="text" id="campoNomeJogador" placeholder="Enter Player's name" />
+    <button onClick="criarJogador()">Add New Player</button>
+
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Wins</th>
+                <th>Draws</th>
+                <th>Losses</th>
+                <th>Points</th>
+                <th colspan="5">Action Buttons</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaJogadores">
+
+        </tbody>
+    </table>
+    <button onClick="apagarJogadores()">Delete All Players</button>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
